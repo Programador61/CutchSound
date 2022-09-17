@@ -1,9 +1,13 @@
-const menuDiv = document.getElementById('menu-moble')
-const betanimar = document.getElementById('btn-menu')  
 
-menuDiv.addEventListener('click', animarmenu)
+const menuDiv = document.getElementById('menu-mobile')
+const btnanimar = document.getElementById('btn-menu')
 
-function animarmenu(){
+menuDiv.addEventListener('click', animar)
+
+
+function animar(){
     menuDiv.classList.toggle('abrir')
-    betanimar.classList.toggle('ativo')
+    btnanimar.classList.toggle('ativo')
+    const btn = document.getElementById('btn-menu')
+    btn.classList.toggle('ativar')
 }
